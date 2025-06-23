@@ -152,9 +152,8 @@ def update_google_sheet(worksheet, data_dict):
     worksheet.append_row(new_row, value_input_option='USER_ENTERED')
 
 # --- Streamlit UI ---
-st.title("Rishabh Corporation Loading/Unloading Bill AI Processor")
+st.title("AI Bill Processor by Rishabh Corporation")
 st.markdown("Upload a Loading or Unloading Bill to automatically extract data, file the image, and update your Google Sheet.")
-st.markdown("डेटा निकालने, छवि फ़ाइल करने और अपनी Google शीट को अपडेट करने के लिए लोडिंग या अनलोडिंग बिल अपलोड करें।")
 
 uploaded_file = st.file_uploader("Choose a bill image...", type=["jpg", "jpeg", "png"])
 
